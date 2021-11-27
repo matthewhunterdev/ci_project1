@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap');
 
-/* --------------------Colors */
+/* ------------------------------Colors */
 
 .bg-color-name-title {
     background-color: #342534;
@@ -22,7 +22,27 @@
     background-color: #3d2b3d;
 }
 
-/*--------------------Heading */
+/* ------------------------------Special paddings/margins/texts */
+
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "archivo", sans-serif;
+    font-weight: 300;
+    color: #fffcf7
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* ------------------------------Heading */
 
 header {
     margin: 0;
@@ -69,6 +89,10 @@ header {
     font-size: 0;
 }
 
+#nav {
+    margin:0;
+}
+
 #nav li {
     font-size: 14px;
     padding: 0;
@@ -94,4 +118,36 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* ------------------------------Hover.css */
+.hvr-fade:active, .hvr-fade:focus, .hvr-fade:hover {
+    background-color: #3d2b3d;
+    color: #db5461;
+    height: 120px;
+}
+
+
+/* ------------------------------Footer */
+
+footer {
+    background-color: #342534;
+    color: #fffcf7;
+    min-height: 120px;
+    margin: 0;
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+/* ------------------------------Other */
+
+a:hover {
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    color:red;
 }
